@@ -10,7 +10,7 @@ services:
   backend: #name of the second service
     build: crud_backend # specify the directory of the Dockerfile
     ports:
-      - "8080:8080" #specify ports forewarding
+      - "8085:8085" #specify ports forewarding
     container_name: back-container
     restart: always
     

@@ -13,7 +13,7 @@ import { Message } from './message';
 })
 export class CustomerService {
 
-  private baseUrl = 'http://localhost:8080/api/customers';
+  private baseUrl = 'http://localhost:8085/api/customers';
 
   constructor(private http: HttpClient) { }
 
