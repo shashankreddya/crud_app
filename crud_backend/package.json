@@ -6,10 +6,6 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/loizenai"
-  },
   "keywords": [
     "nodejs",
     "crud",
@@ -18,7 +14,7 @@
     "example",
     "express"
   ],
-  "author": "https://loizenai.com",
+  "author": "SA",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",

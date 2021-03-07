@@ -9,10 +9,6 @@ const CustomerSchema = mongoose.Schema({
       min: 18, 
       max: 65, 
       required: true 
-    },
-    copyrightby: {
-      type: String,
-      default: 'https://loizenai.com'
     }
 });
 

@@ -5,7 +5,7 @@ app.use(bodyParser.json())
 
 const cors = require('cors')
 const corsOptions = {
-  origin: 'http://localhost:4200',
+  origin: '*',
   optionsSuccessStatus: 200
 }
 app.use(cors(corsOptions));
@@ -21,7 +21,7 @@ mongoose.connect(dbConfig.url, { useNewUrlParser: true, useUnifiedTopology: true
     .then(() => {
         console.log("Successfully connected to MongoDB.");    
     }).catch(err => {
-        console.log('Could not connect to MongoDB.');
+        console.log('Could not connect to MongoDB.' + err);
         process.exit();
     });
 

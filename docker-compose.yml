@@ -1,0 +1,16 @@
+version: '2' # specify docker-compose version
+# Define the services/containers to be run
+services:
+  frontend: #name of the first service
+    build: crud_ui # specify the directory of the Dockerfile crud_backend\Dockerfile
+    ports:
+      - "4200:4200" # specify port forewarding
+    container_name: front-container
+    restart: always
+  backend: #name of the second service
+    build: crud_backend # specify the directory of the Dockerfile
+    ports:
+      - "8080:8080" #specify ports forewarding
+    container_name: back-container
+    restart: always
+    
